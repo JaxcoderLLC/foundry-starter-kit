@@ -41,7 +41,7 @@ Please install the following:
     -   You'll know you've done it right if you can run `git --version`
 -   [Foundry / Foundryup](https://github.com/gakonst/foundry)
     -   This will install `forge`, `cast`, and `anvil`
-    -   You can test you've installed them right by running `forge --version` and get an output like: `forge 0.2.0 (f016135 2022-07-04T00:15:02.930499Z)`
+    -   You can test you've installed them right by running `forge --version` and get an output like: `forge 0.2.0 (ae3ec74 2023-08-26T00:18:16.173100000Z)`
     -   To get the latest of each, just run `foundryup`
 
 And you probably already have `make` installed... but if not [try looking here.](https://askubuntu.com/questions/161104/how-do-i-install-make)
@@ -85,6 +85,9 @@ You'll need to add the following variables to a `.env` file:
 ## Deploying
 
 ```
+// add the .env variables
+source .env
+
 make deploy-sepolia contract=<CONTRACT_NAME>
 ```
 
